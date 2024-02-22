@@ -1,0 +1,67 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        
+        <link href ="css.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id = "header">
+            <div id = "text">
+                <h1 style="margin-bottom: 0%;">Software Shop</h1>
+                <p style="margin-top: 0%;">this is a website for buying and selling software</p>
+            </div>  
+            <button class="buttons" onclick="location.href='http://localhost:8090/ClientPage.html'">Customer</button>
+            <button class="buttons" onclick="location.href='http://localhost:8090/MainPage.html'">Home</button>
+            <button class="buttons" onclick="location.href='http://localhost:8090/SellerPage.html'">Seller</button>
+        </div>
+
+        <div class = "content">
+            <form id="customerForm">
+                <label>Enter User ID</label>
+                <input name="customerID", type = "text" required>
+                <input type="submit">
+            </form>
+            <p id="customerInfo"></p>
+
+        </div>
+        
+        <div class="content">
+            <h1>here you can see software for sale</h1>
+            <table class = "table" id="softwareTable">
+                <th>software ID</th>
+                <th>software Name</th>
+                <th>seller ID</th>
+                <th>device Type</th>
+
+            </table>
+
+
+        </div> 
+
+        <div class="content">
+            <h1>here you can see software you already own</h1>
+            <table class = "table" id="customerSoftwareTable">
+                <th>software ID</th>
+                <th>software Name</th>
+                <th>seller ID</th>
+                <th>device Type</th>
+
+            </table>
+        </div>
+
+        <div class="content">
+            <h1>here you can buy software</h1>
+            <form id ="buyForm">
+                <label>Enter the softwareID for the software you would like to buy</label>
+                <input name = "softwareID" type="text" required>
+                <input type="submit">
+            </form>
+            <p id="buyConfirm"></p>
+        </div>
+
+        
+    </body>     
+    <script src="ClientScript.js"></script>
+    <script src="TableFiller.js"></script>
+</html>

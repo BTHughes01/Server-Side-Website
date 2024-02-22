@@ -1,0 +1,55 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link href ="css.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id = "header">
+            <div id = "text">
+                <h1 style="margin-bottom: 0%;">Software Shop</h1>
+                <p style="margin-top: 0%;">this is a website for buying and selling software</p>
+            </div>  
+            <button class="buttons" onclick="location.href='http://localhost:8090/ClientPage.html'">Customer</button>
+            <button class="buttons" onclick="location.href='http://localhost:8090/MainPage.html'">Home</button>
+            <button class="buttons" onclick="location.href='http://localhost:8090/SellerPage.html'">Seller</button>
+        </div>
+
+
+
+        </div> 
+
+        <div class="content">
+            <h1>Register new seller</h1>
+
+
+            <form id="sellerForm">
+                <label>Enter New Seller Name</label>
+                <input name="newSellerName" required>
+                <input type="submit">
+
+            </form>
+            <p id="newSellerID"></p>
+
+
+
+        </div>
+
+        <div class="content">
+            <h1>Register new Customer</h1>
+            <form id="customerForm">
+                <label>Enter Customer Name</label>
+                <input type="text" name="customerName" required>
+                <label>Enter Customer Address </label>
+                <input type="text" name="customerAddress" required>
+                <input type="submit">
+
+            </form>
+            <p id="newCustomerID"></p>
+        </div>
+
+
+    </body>     
+    <script src="HomeScript.js"></script>
+    <script src="TableFiller.js"></script>
+</html>

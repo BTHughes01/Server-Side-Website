@@ -1,0 +1,69 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+
+        <link href ="css.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id = "header">
+            <div id = "text">
+                <h1 style="margin-bottom: 0%;">Software Shop</h1>
+                <p style="margin-top: 0%;">this is a website for buying and selling software</p>
+            </div>  
+            <button class="buttons" onclick="location.href='http://localhost:8090/ClientPage.html'">Customer</button>
+            <button class="buttons" onclick="location.href='http://localhost:8090/MainPage.html'">Home</button>
+            <button class="buttons" onclick="location.href='http://localhost:8090/SellerPage.html'">Seller</button>
+        </div>
+
+        <div class="content">
+            <form id= "sellerForm">
+                <label>Enter seller ID</label>
+                <input name="sellerID" type="text" required>
+                <input type="submit">
+
+            </form>
+            <p id="sellerData"></p>
+
+
+        </div>
+
+        <div class ="content">
+            <h1>here you can see your customers</h1>
+            <table class = "table" id="sellerCustomerTable">
+                <th>customer ID</th>
+                <th>Name</th>
+                <th>softwares Owned</th>
+                <th>address</th>
+
+            </table>
+        </div>
+
+        <div class="content">
+            <h1>here you can see the software you are selling</h1>
+            <table class = "table" id="sellerSoftwareTable">
+                <th>software ID</th>
+                <th>software Name</th>
+                <th>device Type</th>
+
+            </table>
+        </div> 
+
+        <div class="content">
+            <h1>here you can add new software to sell</h1>
+            <form id="newSoftwareForm">
+                <label>Enter new software name</label>
+                <input name = "name" type="text" required>
+                <label>Enter new software device type</label>
+                <input name="deviceType" type="text">
+                <input type="submit">
+            </form>
+        <form>
+        <p id = "newSoftwareConfirm"></p>
+        </form>
+        </div>
+    </body>     
+    <script src="SellerScript.js"></script>
+    <script src="TableFiller.js"></script>
+
+</html>

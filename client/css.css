@@ -1,0 +1,100 @@
+body{
+    background-image: linear-gradient(to right, rgb(222, 148, 148), rgb(169, 187, 226));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#header{
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    font-size: 200%;
+    text-align: center;
+    width: fit-content;
+    background-color:rgb(176, 176, 176);
+    border-radius: 1em;
+    padding: 0.5%;
+    border: 0.2rem solid rgb(101, 101, 101);
+    height: fit-content;
+}
+
+#text{
+    transition-duration:300ms ;
+}
+
+#text:hover{
+    font-size: larger;
+}
+
+.content{
+
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    font-size: 110%;
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;
+    background-color:rgb(210, 210, 210);
+    border-radius: 1em;
+    padding: 2%;
+    border: 0.2rem solid rgb(149, 149, 149);
+    height: fit-content;
+}
+
+.buttons{
+    height: 5%;
+    min-height: auto;
+    font-size: 100%;
+    width: fit-content;
+    font-weight: bold;
+    transition-duration: 300ms;
+}
+
+.buttons:hover{
+    font-size: larger;
+    background-color: rgb(42, 165, 155);
+}
+
+.table{
+    border: 0.2rem solid rgb(101, 101, 101);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+table tbody {
+    display: table;
+    width: 100%;
+}
+
+
+th{
+    background-color: rgb(180, 215, 215);
+}
+
+td,th{
+    outline: thin solid black;
+    margin: 2%;
+}
+
+#deleteButton{
+    transition: 300ms;
+}
+
+input{
+    transition: 300ms;
+}
+input:hover{
+    background-color: lightskyblue;
+}
+
+#deleteButton:hover{
+    background-color: red;
+}
+

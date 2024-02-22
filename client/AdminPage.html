@@ -1,0 +1,73 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        
+        <link href ="css.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id = "header">
+            <div id = "text">
+                <h1 style="margin-bottom: 0%;">Admin Page</h1>
+                <p style="margin-top: 0%;">Here you can view and remove entities</p>
+            </div>  
+            <button class="buttons" onclick="location.href='http://localhost:8090/ClientPage.html'">Customer</button>
+            <button class="buttons" onclick="location.href='http://localhost:8090/MainPage.html'">Home</button>
+            <button class="buttons" onclick="location.href='http://localhost:8090/SellerPage.html'">Seller</button>
+        </div>
+
+        <div class = "content">
+            <h1>Here you can see all customers</h1>
+            <table class = "table" id="customerTable">
+                <th>customer ID</th>
+                <th>Name</th>
+                <th>softwares Owned</th>
+                <th>address</th>
+
+            </table>
+        </div>
+        
+        <div class="content">
+            <h1>Here you can see all sellers</h1>
+            <table class = "table" id="sellerTable">
+                <th>Seller ID</th>
+                <th>Name</th>
+                <th>Software IDs</th>
+
+            </table>
+            
+        </div> 
+
+        <div class="content">
+            <h1>Here you can see all softwares</h1>
+            <table class = "table" id="softwareTable">
+                <th>Software ID</th>
+                <th>Seller ID</th>
+                <th>Customer IDs</th>
+                <th>Name</th>
+                <th>Device Type</th>
+
+            </table>
+        </div>
+
+        <div class="content">
+            <h1>Here you can delete Entities</h1>
+            <form id="deleteForm">
+                <label>Choose entity type</label>
+                <select name="entity">
+                    <option value="customer">Customer</option>
+                    <option value="software">Software</option>
+                    <option value="seller">Seller</option>
+                </select>
+                <label>Enter Entity ID</label>
+                <input type="text" name="id">
+                <input type="submit" value="Delete" id="deleteButton">
+            </form>
+            <p id="deleteConfirm"></p>
+        </div>
+
+        
+    </body>     
+    <script src="AdminScript.js"></script>
+    <script src="TableFiller.js"></script>
+</html>
